@@ -1,0 +1,4 @@
+mode:
+  type: Standalone
+  repository:
+    type: JDBC

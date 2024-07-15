@@ -1,0 +1,4 @@
+rules:
+  tables:
+    tb_attendance_clock_data:
+      actualDataNodes: tb_attendance_clock_data_${0..1}

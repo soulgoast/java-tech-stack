@@ -1,0 +1,9 @@
+mode:
+  type: Cluster
+  repository:
+    type: ZooKeeper
+    props:
+      namespace: governance
+      server-lists: localhost:2181
+      retryIntervalMilliseconds: 500
+      timeToLiveSeconds: 60

@@ -10,9 +10,12 @@
     <packaging>pom</packaging>
     <modules>
         <module>spring/spring-framework</module>
+        <module>sharing/shardingsphere</module>
     </modules>
 
     <properties>
+        <shardingsphere.version>5.4.0</shardingsphere.version>
+
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -36,6 +39,16 @@
                 <groupId>org.springframework.cloud</groupId>
                 <artifactId>spring-cloud-dependencies</artifactId>
                 <version>2023.0.2</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.shardingsphere</groupId>
+                <artifactId>shardingsphere-jdbc-core</artifactId>
+                <version>${shardingsphere.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.shardingsphere</groupId>
+                <artifactId>shardingsphere-cluster-mode-repository-zookeeper</artifactId>
+                <version>${shardingsphere.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
