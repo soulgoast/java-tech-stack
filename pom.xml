@@ -11,6 +11,7 @@
     <modules>
         <module>spring/spring-framework</module>
         <module>sharing/shardingsphere</module>
+        <module>crawler/jsoup-action</module>
     </modules>
 
     <properties>
